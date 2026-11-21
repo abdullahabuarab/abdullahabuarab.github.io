@@ -147,6 +147,67 @@
             <p>The firm uses it every day to run its projects, finances and site supervision.</p>
           </div>
         </div>
+        <div class="tour" aria-label="Guided tour of the system">
+          <div class="tour-frame">
+            <div class="tour-chrome">
+              <span class="tour-url">hajarstudio.sa<span class="tour-path">/dashboard</span></span>
+              <button type="button" class="tour-play" aria-label="Pause tour">Pause</button>
+            </div>
+            <div class="tour-screen">
+              <img src="images/01-dashboard.jpg" width="1123" height="1064" alt="Dashboard screen of the Hajar management system" class="is-active">
+              <img src="images/02-projects.jpg" width="1123" height="1064" alt="Projects screen of the Hajar management system" loading="lazy">
+              <img src="images/03-sales.jpg" width="1123" height="1064" alt="Sales pipeline screen of the Hajar management system" loading="lazy">
+              <img src="images/04-supervision.jpg" width="1123" height="1064" alt="Site supervision screen of the Hajar management system" loading="lazy">
+              <img src="images/05-invoices.jpg" width="1123" height="1064" alt="Invoices screen of the Hajar management system" loading="lazy">
+              <img src="images/06-finance.jpg" width="1123" height="1064" alt="Finance screen of the Hajar management system" loading="lazy">
+              <img src="images/07-management.jpg" width="1123" height="1064" alt="Management screen of the Hajar management system" loading="lazy">
+              <img src="images/08-reports.jpg" width="1123" height="1064" alt="Reports screen of the Hajar management system" loading="lazy">
+            </div>
+          </div>
+          <ol class="tour-steps">
+            <li><button type="button" class="tour-step is-active" data-path="/dashboard" aria-pressed="true">
+              <span class="tour-step-title">Dashboard</span>
+              <span class="tour-step-text">The office at a glance: projects by stage, billed versus collected, open invoices, and site visits due in the next seven days.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/projects" aria-pressed="false">
+              <span class="tour-step-title">Projects</span>
+              <span class="tour-step-text">Each project opens with its client, service (design, supervision or both), plot details and budget, then moves through architectural, drafting, structural and MEP stages.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/sales" aria-pressed="false">
+              <span class="tour-step-title">Sales pipeline</span>
+              <span class="tour-step-text">A built-in CRM for prospects: expected value, next follow-up and win rate, from first contact to signed client.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/supervision" aria-pressed="false">
+              <span class="tour-step-title">Site supervision</span>
+              <span class="tour-step-text">Every project under supervision with its contracted visits, upcoming and overdue visits, and open site notes.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/invoices" aria-pressed="false">
+              <span class="tour-step-title">Invoices</span>
+              <span class="tour-step-text">Invoices with 15% VAT and the client's tax number, linked to a project milestone, with payment receipts attached.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/finance" aria-pressed="false">
+              <span class="tour-step-title">Finance</span>
+              <span class="tour-step-text">Revenue, expenses and profit by month on a cash or accrual basis, plus receivables, suppliers, client statements and VAT returns.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/management" aria-pressed="false">
+              <span class="tour-step-title">Management</span>
+              <span class="tour-step-text">The owner's view: what clients owe, this year's revenue and profit against last year, the sales pipeline and team status.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="/reports" aria-pressed="false">
+              <span class="tour-step-title">Reports</span>
+              <span class="tour-step-text">Reports built from what the system already records: owner's report, profit and loss, receivables ageing, VAT summary and project profitability.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+          </ol>
+          <p class="tour-note">A guided tour of the live system. The interface is in Arabic, the firm's working language, and no client or staff data is shown.</p>
+        </div>
       </article>
     </section>
 
@@ -280,5 +341,6 @@
   <footer class="site-footer wrap">
     <p>Abdullah Abu Arab, Al Ahsa, Saudi Arabia</p>
   </footer>
+  <script src="tour.js" defer></script>
 </body>
 </html>

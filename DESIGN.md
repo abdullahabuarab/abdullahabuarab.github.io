@@ -43,6 +43,7 @@ Contact: email, LinkedIn, CV
 ## Review pass (what was cut as generic)
 - No "big number, small label" stat row in the hero; numbers live inside sentences.
 - No all-caps eyebrows, no arrows on links, no monospace data labels, no uniform card grid.
-- Motion: only the grid drawing on load. Respects `prefers-reduced-motion`.
+- Motion: the grid drawing on load, plus the product tour that advances itself (pauses off-screen, on click, and for reduced-motion users).
+- Product tour excludes HR, payroll, commissions and accounts pages (staff data).
 - Phone number left off the public page on purpose (email + LinkedIn only).
 - No job-seeking language (availability, notice period, iqama). The site shows the work only.

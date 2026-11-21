@@ -221,3 +221,28 @@ a:hover { text-decoration-thickness: 2px; }
 /* Certificate summaries */
 .cert-list { gap: 18px; }
 .cert-summary { margin-top: 4px; font-size: var(--fs-sm); line-height: 1.55; color: var(--muted); max-width: 62ch; }
+
+/* Guided product tour */
+.tour { grid-column: 1 / -1; display: grid; gap: 24px; margin-top: 16px; }
+@media (min-width: 960px) { .tour { grid-template-columns: 1.7fr 1fr; gap: 32px; align-items: start; } }
+.tour-frame { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tour-chrome { display: flex; align-items: center; gap: 12px; padding: 8px 10px 8px 14px; border-bottom: 1px solid var(--line); }
+.tour-url { flex: 1; min-width: 0; font-size: 0.8125rem; color: var(--muted); background: var(--paper); border-radius: 999px; padding: 4px 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tour-path { color: var(--ink); }
+.tour-play { font: 600 0.8125rem var(--font); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 12px; cursor: pointer; }
+.tour-play:hover { border-color: var(--accent); color: var(--accent); }
+.tour-screen { position: relative; aspect-ratio: 1123 / 1064; background: #ECEBE7; }
+.tour-screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; opacity: 0; transition: opacity .45s ease; }
+.tour-screen img.is-active { opacity: 1; }
+.tour-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.tour-step { position: relative; display: block; width: 100%; text-align: left; font: inherit; color: var(--muted); background: transparent; border: 0; border-left: 2px solid var(--line); padding: 10px 14px; cursor: pointer; overflow: hidden; }
+.tour-step:hover { color: var(--ink); }
+.tour-step-title { display: block; font-weight: 600; font-size: var(--fs-sm); }
+.tour-step-text { display: none; margin-top: 6px; font-size: var(--fs-sm); line-height: 1.55; color: var(--ink); }
+.tour-step.is-active { color: var(--ink); border-left-color: var(--accent); background: var(--surface); }
+.tour-step.is-active .tour-step-text { display: block; }
+.tour-bar { position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--accent); }
+.tour-step.is-active.is-playing .tour-bar { animation: tourbar var(--tour-ms, 7000ms) linear forwards; }
+@keyframes tourbar { to { width: 100%; } }
+.tour-note { grid-column: 1 / -1; font-size: var(--fs-sm); color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .tour-screen img { transition: none; } }
