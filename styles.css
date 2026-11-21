@@ -137,7 +137,6 @@ a:hover { text-decoration-thickness: 2px; }
 .title-block dl > div:last-child { border-bottom: 0; }
 .title-block dt { font-size: 0.8125rem; color: var(--muted); }
 .title-block dd { margin: 2px 0 0; font-weight: 600; font-size: var(--fs-sm); }
-.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--live); margin-right: 8px; vertical-align: 1px; }
 
 /* the one orchestrated motion: the plan draws itself */
 @media (prefers-reduced-motion: no-preference) {
