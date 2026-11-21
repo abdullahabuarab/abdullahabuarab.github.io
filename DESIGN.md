@@ -3,9 +3,9 @@
 Method: Anthropic `frontend-design` skill (anthropics/skills, ~198k stars): plan tokens, review for generic defaults, build, critique.
 
 ## Brief
-- **Subject:** Abdullah Abu Arab, a registered structural engineer in Saudi Arabia moving into AI / forward-deployed engineering.
+- **Subject:** Abdullah Abu Arab, a registered structural engineer in Saudi Arabia who also builds engineering software.
 - **Audience:** engineering firms, collaborators and anyone reviewing his work.
-- **Primary job:** in under a minute, prove he ships real software and AI, and that he knows construction from the inside.
+- **Primary job:** in under a minute, show the software he has shipped and the engineering knowledge behind it.
 
 ## Visual idea
 Taken from the vernacular of structural drawings: a column grid plan with grid bubbles and a drawing **title block**.
