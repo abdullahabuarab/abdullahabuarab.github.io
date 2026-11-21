@@ -246,3 +246,9 @@ a:hover { text-decoration-thickness: 2px; }
 @keyframes tourbar { to { width: 100%; } }
 .tour-note { grid-column: 1 / -1; font-size: var(--fs-sm); color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .tour-screen img { transition: none; } }
+
+/* Drawing-sheet tour (Revit) */
+.status-course { color: var(--accent); }
+.tour-sheets .tour-screen { aspect-ratio: 4 / 3; background: #FFFFFF; }
+.tour-sheets .tour-screen img { object-fit: contain; object-position: center; padding: 12px; }
+.case + .case { margin-top: 8px; }

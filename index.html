@@ -121,7 +121,7 @@
     <section class="section wrap" id="work" aria-labelledby="work-h">
       <div class="section-head">
         <h2 id="work-h">Selected work</h2>
-        <p>Software I designed and built myself, for a problem I deal with as an engineer.</p>
+        <p>Software I built for my firm, and the BIM work behind my structural design.</p>
       </div>
 
       <article class="case">
@@ -207,6 +207,92 @@
             </button></li>
           </ol>
           <p class="tour-note">A guided tour of the live system. The interface is in Arabic, the firm's working language, and no client or staff data is shown.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-meta">
+          <p class="status status-course">Course project</p>
+          <h3>Structural BIM model in Revit</h3>
+          <p class="case-tagline">A four-storey concrete building taken from CAD plans to a full Revit Structure drawing set with quantity schedules.</p>
+          <ul class="tags" aria-label="Tools">
+            <li>Revit Structure</li><li>AutoCAD</li><li>BIM</li><li>Schedules</li><li>Families</li>
+          </ul>
+        </div>
+        <div class="case-body">
+          <div class="case-row">
+            <h4>The brief</h4>
+            <p>Model a reinforced-concrete building with two rectangular wings and a curved block around a circular core, then document it the way a consultancy issues structural drawings. This was the final project of a BIM Revit Structure course.</p>
+          </div>
+          <div class="case-row">
+            <h4>What I did</h4>
+            <p>Starting from CAD grid, foundation and floor plans, I set up rectangular and radial grids and modelled the full structure: isolated footings on plain-concrete blinding, ground and strap beams, rectangular and circular columns, beams, slabs and stairs. I split the model into three parts so each could be scheduled and issued on its own, and made custom tag families for columns, beams, slabs and footings.</p>
+          </div>
+          <div class="case-row">
+            <h4>Output</h4>
+            <p>A 12-sheet drawing set: column layout, foundation plans and sections for each part, ground-floor columns, first-floor framing, stair details, and material take-off schedules giving the count, size and concrete volume of every element.</p>
+          </div>
+          <p><a href="files/revit-structure-drawing-set.pdf">View the full drawing set (PDF, 12 sheets, 3.8 MB)</a></p>
+        </div>
+        <div class="tour tour-sheets" aria-label="Sheets from the Revit drawing set">
+          <div class="tour-frame">
+            <div class="tour-chrome">
+              <span class="tour-url"><span class="tour-path">Sheet 00, Structure overview</span></span>
+              <button type="button" class="tour-play" aria-label="Pause tour">Pause</button>
+            </div>
+            <div class="tour-screen">
+              <img src="images/revit-01-overview.jpg" alt="The model: Sheet 00, Structure overview" class="is-active">
+              <img src="images/revit-02-column-layout.jpg" alt="Grids and columns: Sheet 01, RC column axis" loading="lazy">
+              <img src="images/revit-03-foundation.jpg" alt="Foundation plan: Sheet 02, RC foundation" loading="lazy">
+              <img src="images/revit-04-curved-foundation.jpg" alt="Curved block foundations: Sheet 05, RC foundation P3" loading="lazy">
+              <img src="images/revit-05-ground-columns.jpg" alt="Ground-floor columns: Sheet 06, Ground floor columns" loading="lazy">
+              <img src="images/revit-06-framing.jpg" alt="First-floor framing: Sheet 07, First floor framing layout" loading="lazy">
+              <img src="images/revit-07-schedules.jpg" alt="Quantity schedules: Sheet 08, STR part 1 schedules" loading="lazy">
+              <img src="images/revit-08-stairs.jpg" alt="Stairs: Sheet 11, STR stair" loading="lazy">
+            </div>
+          </div>
+          <ol class="tour-steps">
+            <li><button type="button" class="tour-step is-active" data-path="Sheet 00, Structure overview" aria-pressed="true">
+              <span class="tour-step-title">The model</span>
+              <span class="tour-step-text">A four-storey reinforced-concrete building split into three parts: two rectangular wings and a curved block around a circular core. Each part is scheduled and issued on its own.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 01, RC column axis" aria-pressed="false">
+              <span class="tour-step-title">Grids and columns</span>
+              <span class="tour-step-text">Rectangular and radial grids with every column placed and tagged, plus a column schedule covering rectangular and circular types.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 02, RC foundation" aria-pressed="false">
+              <span class="tour-step-title">Foundation plan</span>
+              <span class="tour-step-text">Isolated footings on plain-concrete blinding, tied together with ground beams and strap beams across all three parts.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 05, RC foundation P3" aria-pressed="false">
+              <span class="tour-step-title">Curved block foundations</span>
+              <span class="tour-step-text">Footings and curved ground beams following the radial grid of the curved block, modelled and scheduled separately.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 06, Ground floor columns" aria-pressed="false">
+              <span class="tour-step-title">Ground-floor columns</span>
+              <span class="tour-step-text">Columns from the ground beams to the first floor, coloured by part, each part with its own column schedule.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 07, First floor framing layout" aria-pressed="false">
+              <span class="tour-step-title">First-floor framing</span>
+              <span class="tour-step-text">Beam and slab layout with a section through the frame, and slab and beam schedules for each part.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 08, STR part 1 schedules" aria-pressed="false">
+              <span class="tour-step-title">Quantity schedules</span>
+              <span class="tour-step-text">Material take-off for Part 1, floor by floor: count, dimensions and concrete volume for footings, ground beams, columns, beams, slabs and stairs.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+            <li><button type="button" class="tour-step" data-path="Sheet 11, STR stair" aria-pressed="false">
+              <span class="tour-step-title">Stairs</span>
+              <span class="tour-step-text">Stair plan, section and 3D view through every floor, with a stair schedule for each part.</span>
+              <span class="tour-bar" aria-hidden="true"></span>
+            </button></li>
+          </ol>
         </div>
       </article>
     </section>
