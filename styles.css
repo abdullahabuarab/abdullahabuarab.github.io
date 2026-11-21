@@ -218,3 +218,7 @@ a:hover { text-decoration-thickness: 2px; }
   .site-header, .actions, .grid-plan { display: none; }
   body { background: #fff; }
 }
+
+/* Certificate summaries */
+.cert-list { gap: 18px; }
+.cert-summary { margin-top: 4px; font-size: var(--fs-sm); line-height: 1.55; color: var(--muted); max-width: 62ch; }
