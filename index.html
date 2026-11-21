@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Abdullah Abu Arab | Structural Engineer Building AI for AEC</title>
-  <meta name="description" content="Registered structural engineer in Saudi Arabia building AI tools for engineering firms: a Saudi Building Code assistant with clause citations, a full-stack office management system, and 13 peer-reviewed ML papers.">
+  <meta name="description" content="Registered structural engineer in Saudi Arabia building AI tools for engineering firms: a full-stack office management system in daily use and 13 peer-reviewed ML papers.">
   <meta name="theme-color" content="#F3F4F1" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121416" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
@@ -54,8 +54,8 @@
         <p class="lede">
           I'm a registered structural engineer in Saudi Arabia. Since 2023 I've designed
           reinforced-concrete buildings to the Saudi Building Code, from concept to IFC drawings.
-          Now I build the software that makes that work faster: a code assistant that cites the
-          exact clause, and the management system my firm runs on every day.
+          I also build software that makes that work faster, including the management
+          system my firm runs on every day.
         </p>
         <div class="actions">
           <a class="btn" href="#work">See the work</a>
@@ -121,34 +121,8 @@
     <section class="section wrap" id="work" aria-labelledby="work-h">
       <div class="section-head">
         <h2 id="work-h">Selected work</h2>
-        <p>Software I designed and built myself, for problems I deal with as an engineer.</p>
+        <p>Software I designed and built myself, for a problem I deal with as an engineer.</p>
       </div>
-
-      <article class="case">
-        <div class="case-meta">
-          <p class="status status-progress">In development</p>
-          <h3>SBC Assistant</h3>
-          <p class="case-tagline">Ask the Saudi Building Code a question and get the answer with the clause it comes from.</p>
-          <ul class="tags" aria-label="Stack">
-            <li>Python</li><li>Claude API</li><li>Chroma</li><li>BM25</li><li>fastembed</li>
-          </ul>
-        </div>
-        <div class="case-body">
-          <div class="case-row">
-            <h4>Problem</h4>
-            <p>Engineers lose real time paging through SBC PDFs to find one requirement, like the minimum cover for a footing cast against earth. A generic chatbot answers confidently and cites nothing, which no engineer can sign off on.</p>
-          </div>
-          <div class="case-row">
-            <h4>What I built</h4>
-            <p>A retrieval-augmented assistant that splits the code into one chunk per clause, so every answer can point to a clause number and page. Search is hybrid: vectors for meaning, BM25 for exact terms, because engineers search both ways ("cover for footings" and "§20.6.1.3"). Claude reads only the retrieved clauses and ties each sentence to its source. If the clauses don't contain the answer, it says so instead of guessing.</p>
-          </div>
-          <div class="case-row">
-            <h4>How I measure it</h4>
-            <p>A retrieval eval built from questions in my daily work, each paired with the clause that answers it. The target is the right clause in the top eight results for at least 90% of questions. It runs without any API calls, so I can test every change for free.</p>
-          </div>
-          <p class="case-note">The SBC text is copyrighted, so the code text and index stay private. Demos show the tool working.</p>
-        </div>
-      </article>
 
       <article class="case">
         <div class="case-meta">
