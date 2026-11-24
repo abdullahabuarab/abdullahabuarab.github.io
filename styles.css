@@ -252,3 +252,7 @@ a:hover { text-decoration-thickness: 2px; }
 .tour-sheets .tour-screen { aspect-ratio: 4 / 3; background: #FFFFFF; }
 .tour-sheets .tour-screen img { object-fit: contain; object-position: center; padding: 12px; }
 .case + .case { margin-top: 8px; }
+
+/* Proof links */
+.pubs span a { color: var(--accent); font-weight: 500; text-decoration: underline; }
+.senior .senior-link { margin-top: 12px; font-size: var(--fs-sm); font-weight: 600; }
